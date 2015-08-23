@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="Vijulin" name="com.nk.tests.JobSeekerHomeSearchPageTest" tests="29" failures="16" timestamp="2 Aug 2015 09:40:27 GMT" time="364.314" errors="0">
+  <testcase name="@AfterClass teardown" time="0.0" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.RuntimeException" message="Process refused to die after 10 seconds, and couldn&amp;apos;t taskkill it: Unable to find executable for: taskkill">
+      <![CDATA[java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn't taskkill it: Unable to find executable for: taskkill
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:142)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:201)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
+	at org.openqa.selenium.firefox.FirefoxBinary.quit(FirefoxBinary.java:259)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.quit(NewProfileExtensionConnection.java:204)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.quit(FirefoxDriver.java:377)
+	at org.openqa.selenium.firefox.FirefoxDriver.stopClient(FirefoxDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:467)
+	at com.nk.util.NkCommon.teardown(NkCommon.java:76)
+	at com.nk.tests.JobSeekerHomeSearchPageTest.teardown(JobSeekerHomeSearchPageTest.java:249)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+Caused by: java.lang.NullPointerException: Unable to find executable for: taskkill
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:250)
+	at org.openqa.selenium.os.UnixProcess.<init>(UnixProcess.java:62)
+	at org.openqa.selenium.os.CommandLine.<init>(CommandLine.java:38)
+	at org.openqa.selenium.os.WindowsUtils.killPID(WindowsUtils.java:172)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:138)
+	... 43 more
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="recuitersMenu" time="9.584" classname="com.nk.tests.JobSeekerHomeSearchPageTest"/>
+  <testcase name="JobsearchItemsdisplayed" time="0.685" classname="com.nk.tests.JobSeekerHomeSearchPageTest"/>
+  <testcase name="bestPlaceToWork" time="2.111" classname="com.nk.tests.JobSeekerHomeSearchPageTest"/>
+  <testcase name="browsejobs" time="1.006" classname="com.nk.tests.JobSeekerHomeSearchPageTest"/>
+  <testcase name="careerNavigator" time="9.413" classname="com.nk.tests.JobSeekerHomeSearchPageTest"/>
+  <testcase name="componetdisplayedfornotloggedin" time="0.397" classname="com.nk.tests.JobSeekerHomeSearchPageTest"/>
+  <testcase name="createJobAlert" time="5.596" classname="com.nk.tests.JobSeekerHomeSearchPageTest"/>
+  <testcase name="fastFarward" time="7.915" classname="com.nk.tests.JobSeekerHomeSearchPageTest"/>
+  <testcase name="footBrowsejobs" time="90.488" classname="com.nk.tests.JobSeekerHomeSearchPageTest"/>
+  <testcase name="footEmployee" time="29.452" classname="com.nk.tests.JobSeekerHomeSearchPageTest"/>
+  <testcase name="footFastfarward" time="16.0" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.AssertionError" message="FastFarward Links Sub Titles are Missing expected:&amp;lt;Job Alerts - Job Alert on Mobile - Job Alert on Email - Naukri.com&amp;gt; but was:&amp;lt;Atos&amp;gt;">
+      <![CDATA[java.lang.AssertionError: FastFarward Links Sub Titles are Missing expected:<Job Alerts - Job Alert on Mobile - Job Alert on Email - Naukri.com> but was:<Atos>
+	at com.nk.tests.JobSeekerHomeSearchPageTest.footFastfarward(JobSeekerHomeSearchPageTest.java:1220)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="footFollowus" time="10.243" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="footFollowus Test case FailedUnable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//div[@class=&amp;apos;fl column last-child&amp;apos;]/div[2]/a[text()=&amp;apos;Follow Us&amp;apos;]&amp;quot;}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+*** Element info: {Using=xpath, value=//div[@class=&amp;apos;fl column last-child&amp;apos;]/div[2]/a[text()=&amp;apos;Follow Us&amp;apos;]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]">
+      <![CDATA[java.lang.Exception: footFollowus Test case FailedUnable to locate element: {"method":"xpath","selector":"//div[@class='fl column last-child']/div[2]/a[text()='Follow Us']"}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+*** Element info: {Using=xpath, value=//div[@class='fl column last-child']/div[2]/a[text()='Follow Us']}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at com.nk.tests.JobSeekerHomeSearchPageTest.footFollowus(JobSeekerHomeSearchPageTest.java:1151)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="footInformation" time="10.268" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="footInformation Test case Failed Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//div[1][@class=&amp;apos;column &amp;apos;]/ul/li[@class=&amp;apos;header&amp;apos;]/a&amp;quot;}
+Command duration or timeout: 10.18 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+*** Element info: {Using=xpath, value=//div[1][@class=&amp;apos;column &amp;apos;]/ul/li[@class=&amp;apos;header&amp;apos;]/a}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]">
+      <![CDATA[java.lang.Exception: footInformation Test case Failed Unable to locate element: {"method":"xpath","selector":"//div[1][@class='column ']/ul/li[@class='header']/a"}
+Command duration or timeout: 10.18 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+*** Element info: {Using=xpath, value=//div[1][@class='column ']/ul/li[@class='header']/a}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at com.nk.tests.JobSeekerHomeSearchPageTest.footInformation(JobSeekerHomeSearchPageTest.java:998)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="headerListItemsAndRecruiters" time="10.066" classname="com.nk.tests.JobSeekerHomeSearchPageTest"/>
+  <testcase name="hpHeaderrightside" time="10.173" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="hpHeaderright side test cases failed  Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//ul/li/a[@title=&amp;apos;Employer Login&amp;apos;]&amp;quot;}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+*** Element info: {Using=xpath, value=//ul/li/a[@title=&amp;apos;Employer Login&amp;apos;]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]">
+      <![CDATA[java.lang.Exception: hpHeaderright side test cases failed  Unable to locate element: {"method":"xpath","selector":"//ul/li/a[@title='Employer Login']"}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+*** Element info: {Using=xpath, value=//ul/li/a[@title='Employer Login']}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at com.nk.tests.JobSeekerHomeSearchPageTest.hpHeaderrightside(JobSeekerHomeSearchPageTest.java:334)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="jobBYCategory" time="10.183" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="jobBYCategory Test case Failed  Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//div/h5&amp;quot;}
+Command duration or timeout: 10.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+*** Element info: {Using=xpath, value=//div/h5}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]">
+      <![CDATA[java.lang.Exception: jobBYCategory Test case Failed  Unable to locate element: {"method":"xpath","selector":"//div/h5"}
+Command duration or timeout: 10.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+*** Element info: {Using=xpath, value=//div/h5}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at com.nk.tests.JobSeekerHomeSearchPageTest.jobBYCategory(JobSeekerHomeSearchPageTest.java:2503)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="jobBYLocation" time="10.107" classname="com.nk.tests.JobSeekerHomeSearchPageTest"/>
+  <testcase name="jobGallery" time="10.12" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="Job Gallary Test case Failed  Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//div[@class=&amp;apos;hpms fl&amp;apos;]//h3[2]&amp;quot;}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+*** Element info: {Using=xpath, value=//div[@class=&amp;apos;hpms fl&amp;apos;]//h3[2]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]">
+      <![CDATA[java.lang.Exception: Job Gallary Test case Failed  Unable to locate element: {"method":"xpath","selector":"//div[@class='hpms fl']//h3[2]"}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+*** Element info: {Using=xpath, value=//div[@class='hpms fl']//h3[2]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at com.nk.tests.JobSeekerHomeSearchPageTest.jobGallery(JobSeekerHomeSearchPageTest.java:2018)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="jobSpeak" time="10.137" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="jobSpeak Testcase Failed:  Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//div/h3[text()=&amp;apos;Naukri JobSpeak&amp;apos;]&amp;quot;}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+*** Element info: {Using=xpath, value=//div/h3[text()=&amp;apos;Naukri JobSpeak&amp;apos;]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]">
+      <![CDATA[java.lang.Exception: jobSpeak Testcase Failed:  Unable to locate element: {"method":"xpath","selector":"//div/h3[text()='Naukri JobSpeak']"}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+*** Element info: {Using=xpath, value=//div/h3[text()='Naukri JobSpeak']}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at com.nk.tests.JobSeekerHomeSearchPageTest.jobSpeak(JobSeekerHomeSearchPageTest.java:2406)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="moreMenu" time="10.217" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="More Menu Test case Failed Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//ul/li[5]/a/div&amp;quot;}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+*** Element info: {Using=xpath, value=//ul/li[5]/a/div}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]">
+      <![CDATA[java.lang.Exception: More Menu Test case Failed Unable to locate element: {"method":"xpath","selector":"//ul/li[5]/a/div"}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+*** Element info: {Using=xpath, value=//ul/li[5]/a/div}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at com.nk.tests.JobSeekerHomeSearchPageTest.moreMenu(JobSeekerHomeSearchPageTest.java:1668)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="naukriFastForward" time="10.144" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="naukriFastForward Test case is FailedUnable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//div/a/h3&amp;quot;}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+*** Element info: {Using=xpath, value=//div/a/h3}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]">
+      <![CDATA[java.lang.Exception: naukriFastForward Test case is FailedUnable to locate element: {"method":"xpath","selector":"//div/a/h3"}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+*** Element info: {Using=xpath, value=//div/a/h3}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at com.nk.tests.JobSeekerHomeSearchPageTest.naukriFastForward(JobSeekerHomeSearchPageTest.java:2167)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="partnersite" time="10.152" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="partnersite Test case failed Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//div[@class=&amp;apos;footer carousel&amp;apos;]/div/span&amp;quot;}
+Command duration or timeout: 10.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+*** Element info: {Using=xpath, value=//div[@class=&amp;apos;footer carousel&amp;apos;]/div/span}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]">
+      <![CDATA[java.lang.Exception: partnersite Test case failed Unable to locate element: {"method":"xpath","selector":"//div[@class='footer carousel']/div/span"}
+Command duration or timeout: 10.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+*** Element info: {Using=xpath, value=//div[@class='footer carousel']/div/span}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at com.nk.tests.JobSeekerHomeSearchPageTest.partnersite(JobSeekerHomeSearchPageTest.java:1181)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="postyourcv" time="10.132" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="postyourcv Test Case Failed  : Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;id&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;emailId&amp;quot;}
+Command duration or timeout: 10.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+*** Element info: {Using=id, value=emailId}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]">
+      <![CDATA[java.lang.Exception: postyourcv Test Case Failed  : Unable to locate element: {"method":"id","selector":"emailId"}
+Command duration or timeout: 10.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+*** Element info: {Using=id, value=emailId}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at com.nk.tests.JobSeekerHomeSearchPageTest.postyourcv(JobSeekerHomeSearchPageTest.java:1831)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="serviceForRecruiters" time="10.154" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="serviceForRecruiters Test case Failed Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//div/h3[text()=&amp;apos;Services for Recruiters&amp;apos;]&amp;quot;}
+Command duration or timeout: 10.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+*** Element info: {Using=xpath, value=//div/h3[text()=&amp;apos;Services for Recruiters&amp;apos;]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]">
+      <![CDATA[java.lang.Exception: serviceForRecruiters Test case Failed Unable to locate element: {"method":"xpath","selector":"//div/h3[text()='Services for Recruiters']"}
+Command duration or timeout: 10.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+*** Element info: {Using=xpath, value=//div/h3[text()='Services for Recruiters']}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at com.nk.tests.JobSeekerHomeSearchPageTest.serviceForRecruiters(JobSeekerHomeSearchPageTest.java:2368)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="servicesResumeWriting" time="10.208" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="servicesResumeWriting Test case Failed Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//ul/li[4]/a/div&amp;quot;}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+*** Element info: {Using=xpath, value=//ul/li[4]/a/div}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]">
+      <![CDATA[java.lang.Exception: servicesResumeWriting Test case Failed Unable to locate element: {"method":"xpath","selector":"//ul/li[4]/a/div"}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+*** Element info: {Using=xpath, value=//ul/li[4]/a/div}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at com.nk.tests.JobSeekerHomeSearchPageTest.servicesResumeWriting(JobSeekerHomeSearchPageTest.java:945)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="topemployer" time="10.152" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="topemployer Test case Failed Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//div/h2[2]&amp;quot;}
+Command duration or timeout: 10.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+*** Element info: {Using=xpath, value=//div/h2[2]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]">
+      <![CDATA[java.lang.Exception: topemployer Test case Failed Unable to locate element: {"method":"xpath","selector":"//div/h2[2]"}
+Command duration or timeout: 10.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+*** Element info: {Using=xpath, value=//div/h2[2]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at com.nk.tests.JobSeekerHomeSearchPageTest.topemployer(JobSeekerHomeSearchPageTest.java:1263)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="walkinjobs" time="16.461" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="java.lang.Exception" message="walkinjobs Testcase Is failed Error communicating with the remote browser. It may have died.
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+Driver info: driver.version: RemoteWebDriver">
+      <![CDATA[java.lang.Exception: walkinjobs Testcase Is failed Error communicating with the remote browser. It may have died.
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+Driver info: driver.version: RemoteWebDriver
+	at com.nk.tests.JobSeekerHomeSearchPageTest.walkinjobs(JobSeekerHomeSearchPageTest.java:2086)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="getscreenshot" time="1.024" classname="com.nk.tests.JobSeekerHomeSearchPageTest"/>
+  <testcase name="jobsMenu" time="1.012" classname="com.nk.tests.JobSeekerHomeSearchPageTest">
+    <failure type="org.openqa.selenium.remote.UnreachableBrowserException" message="Error communicating with the remote browser. It may have died.
+Build info: version: &amp;apos;2.47.1&amp;apos;, revision: &amp;apos;unknown&amp;apos;, time: &amp;apos;2015-07-30 11:02:44&amp;apos;
+System info: host: &amp;apos;Vijulin&amp;apos;, ip: &amp;apos;192.168.0.3&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+Driver info: driver.version: RemoteWebDriver">
+      <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Vijulin', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:589)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:485)
+	at com.nk.tests.JobSeekerHomeSearchPageTest.jobsMenu(JobSeekerHomeSearchPageTest.java:439)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:170)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:393)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)
+	... 34 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 49 more
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

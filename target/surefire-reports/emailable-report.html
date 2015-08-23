@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">vijuTest</td><td class="numi">13</td><td class="numi">13</td><td class="numi">0</td><td class="numi_attn">16</td><td class="numi">364.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">vijuTest &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.nk.tests.JobSeekerHomeSearchPageTest<td><a href="#m1"><b>teardown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">vijuTest &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="16">com.nk.tests.JobSeekerHomeSearchPageTest<td><a href="#m2"><b>hpHeaderrightside</b>  </a></td><td class="numi">1</td><td class="numi">10173</td></tr><tr class="failedodd"><td><a href="#m3"><b>moreMenu</b>  </a></td><td class="numi">1</td><td class="numi">10217</td></tr><tr class="failedodd"><td><a href="#m4"><b>footInformation</b>  </a></td><td class="numi">1</td><td class="numi">10268</td></tr><tr class="failedodd"><td><a href="#m5"><b>servicesResumeWriting</b>  </a></td><td class="numi">1</td><td class="numi">10208</td></tr><tr class="failedodd"><td><a href="#m6"><b>jobSpeak</b>  </a></td><td class="numi">1</td><td class="numi">10137</td></tr><tr class="failedodd"><td><a href="#m7"><b>footFollowus</b>  </a></td><td class="numi">1</td><td class="numi">10243</td></tr><tr class="failedodd"><td><a href="#m8"><b>jobsMenu</b>  </a></td><td class="numi">1</td><td class="numi">1012</td></tr><tr class="failedodd"><td><a href="#m9"><b>postyourcv</b>  </a></td><td class="numi">1</td><td class="numi">10132</td></tr><tr class="failedodd"><td><a href="#m10"><b>jobGallery</b>  </a></td><td class="numi">1</td><td class="numi">10120</td></tr><tr class="failedodd"><td><a href="#m11"><b>footFastfarward</b>  </a></td><td class="numi">1</td><td class="numi">16000</td></tr><tr class="failedodd"><td><a href="#m12"><b>serviceForRecruiters</b>  </a></td><td class="numi">1</td><td class="numi">10154</td></tr><tr class="failedodd"><td><a href="#m13"><b>partnersite</b>  </a></td><td class="numi">1</td><td class="numi">10152</td></tr><tr class="failedodd"><td><a href="#m14"><b>walkinjobs</b>  </a></td><td class="numi">1</td><td class="numi">16461</td></tr><tr class="failedodd"><td><a href="#m15"><b>jobBYCategory</b>  </a></td><td class="numi">1</td><td class="numi">10183</td></tr><tr class="failedodd"><td><a href="#m16"><b>naukriFastForward</b>  </a></td><td class="numi">1</td><td class="numi">10144</td></tr><tr class="failedodd"><td><a href="#m17"><b>topemployer</b>  </a></td><td class="numi">1</td><td class="numi">10152</td></tr>
+<tr><th colspan="4">vijuTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="13">com.nk.tests.JobSeekerHomeSearchPageTest<td><a href="#m18"><b>JobsearchItemsdisplayed</b>  </a></td><td class="numi">1</td><td class="numi">685</td></tr><tr class="passedodd"><td><a href="#m19"><b>fastFarward</b>  </a></td><td class="numi">1</td><td class="numi">7915</td></tr><tr class="passedodd"><td><a href="#m20"><b>footEmployee</b>  </a></td><td class="numi">1</td><td class="numi">29452</td></tr><tr class="passedodd"><td><a href="#m21"><b>bestPlaceToWork</b>  </a></td><td class="numi">1</td><td class="numi">2111</td></tr><tr class="passedodd"><td><a href="#m22"><b>jobBYLocation</b>  </a></td><td class="numi">1</td><td class="numi">10107</td></tr><tr class="passedodd"><td><a href="#m23"><b>componetdisplayedfornotloggedin</b>  </a></td><td class="numi">1</td><td class="numi">397</td></tr><tr class="passedodd"><td><a href="#m24"><b>browsejobs</b>  </a></td><td class="numi">1</td><td class="numi">1006</td></tr><tr class="passedodd"><td><a href="#m25"><b>footBrowsejobs</b>  </a></td><td class="numi">1</td><td class="numi">90488</td></tr><tr class="passedodd"><td><a href="#m26"><b>careerNavigator</b>  </a></td><td class="numi">1</td><td class="numi">9413</td></tr><tr class="passedodd"><td><a href="#m27"><b>recuitersMenu</b>  </a></td><td class="numi">1</td><td class="numi">9584</td></tr><tr class="passedodd"><td><a href="#m28"><b>getscreenshot</b>  </a></td><td class="numi">1</td><td class="numi">1024</td></tr><tr class="passedodd"><td><a href="#m29"><b>headerListItemsAndRecruiters</b>  </a></td><td class="numi">1</td><td class="numi">10066</td></tr><tr class="passedodd"><td><a href="#m30"><b>createJobAlert</b>  </a></td><td class="numi">1</td><td class="numi">5596</td></tr>
+</table>
+<h1>vijuTest</h1>
+<a id="m1"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:teardown</h2>
+<div style="padding-left:3em">
+<p>Process refused to die after 10 seconds, and couldn&apos;t taskkill it: Unable to find executable for: taskkill</p>
+org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:142)
+<br/>at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+<br/>at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)
+<br/>at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:201)
+<br/>at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)
+<br/>at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
+<br/>at org.openqa.selenium.firefox.FirefoxBinary.quit(FirefoxBinary.java:259)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.quit(NewProfileExtensionConnection.java:204)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.quit(FirefoxDriver.java:377)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.stopClient(FirefoxDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:467)
+<br/>at com.nk.util.NkCommon.teardown(NkCommon.java:76)
+<br/>at com.nk.tests.JobSeekerHomeSearchPageTest.teardown(JobSeekerHomeSearchPageTest.java:249)
+<br/>32 lines not shown
+<p>Caused by Unable to find executable for: taskkill</p>
+com.google.common.base.Preconditions.checkNotNull(Preconditions.java:250)
+<br/>at org.openqa.selenium.os.UnixProcess.&lt;init&gt;(UnixProcess.java:62)
+<br/>at org.openqa.selenium.os.CommandLine.&lt;init&gt;(CommandLine.java:38)
+<br/>at org.openqa.selenium.os.WindowsUtils.killPID(WindowsUtils.java:172)
+<br/>at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:138)
+<br/>at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+<br/>at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)
+<br/>at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:201)
+<br/>at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)
+<br/>at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
+<br/>at org.openqa.selenium.firefox.FirefoxBinary.quit(FirefoxBinary.java:259)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.quit(NewProfileExtensionConnection.java:204)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.quit(FirefoxDriver.java:377)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.stopClient(FirefoxDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:467)
+<br/>at com.nk.util.NkCommon.teardown(NkCommon.java:76)
+<br/>at com.nk.tests.JobSeekerHomeSearchPageTest.teardown(JobSeekerHomeSearchPageTest.java:249)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:hpHeaderrightside</h2>
+<div style="padding-left:3em">
+<p>hpHeaderright side test cases failed  Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul/li/a[@title=&apos;Employer Login&apos;]&quot;}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+*** Element info: {Using=xpath, value=//ul/li/a[@title=&apos;Employer Login&apos;]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.hpHeaderrightside(JobSeekerHomeSearchPageTest.java:334)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:moreMenu</h2>
+<div style="padding-left:3em">
+<p>More Menu Test case Failed Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul/li[5]/a/div&quot;}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+*** Element info: {Using=xpath, value=//ul/li[5]/a/div}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.moreMenu(JobSeekerHomeSearchPageTest.java:1668)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:footInformation</h2>
+<div style="padding-left:3em">
+<p>footInformation Test case Failed Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[1][@class=&apos;column &apos;]/ul/li[@class=&apos;header&apos;]/a&quot;}
+Command duration or timeout: 10.18 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+*** Element info: {Using=xpath, value=//div[1][@class=&apos;column &apos;]/ul/li[@class=&apos;header&apos;]/a}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.footInformation(JobSeekerHomeSearchPageTest.java:998)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:servicesResumeWriting</h2>
+<div style="padding-left:3em">
+<p>servicesResumeWriting Test case Failed Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul/li[4]/a/div&quot;}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+*** Element info: {Using=xpath, value=//ul/li[4]/a/div}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.servicesResumeWriting(JobSeekerHomeSearchPageTest.java:945)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:jobSpeak</h2>
+<div style="padding-left:3em">
+<p>jobSpeak Testcase Failed:  Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/h3[text()=&apos;Naukri JobSpeak&apos;]&quot;}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+*** Element info: {Using=xpath, value=//div/h3[text()=&apos;Naukri JobSpeak&apos;]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.jobSpeak(JobSeekerHomeSearchPageTest.java:2406)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:footFollowus</h2>
+<div style="padding-left:3em">
+<p>footFollowus Test case FailedUnable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;fl column last-child&apos;]/div[2]/a[text()=&apos;Follow Us&apos;]&quot;}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+*** Element info: {Using=xpath, value=//div[@class=&apos;fl column last-child&apos;]/div[2]/a[text()=&apos;Follow Us&apos;]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.footFollowus(JobSeekerHomeSearchPageTest.java:1151)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:jobsMenu</h2>
+<div style="padding-left:3em">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:589)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:485)
+<br/>at com.nk.tests.JobSeekerHomeSearchPageTest.jobsMenu(JobSeekerHomeSearchPageTest.java:439)
+<br/>32 lines not shown
+<p>Caused by Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect</p>
+org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:170)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:393)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:485)
+<br/>at com.nk.tests.JobSeekerHomeSearchPageTest.jobsMenu(JobSeekerHomeSearchPageTest.java:439)
+<br/>32 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br/>at java.net.Socket.connect(Socket.java:579)
+<br/>at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+<br/>at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:170)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:393)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:485)
+<br/>at com.nk.tests.JobSeekerHomeSearchPageTest.jobsMenu(JobSeekerHomeSearchPageTest.java:439)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:postyourcv</h2>
+<div style="padding-left:3em">
+<p>postyourcv Test Case Failed  : Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;emailId&quot;}
+Command duration or timeout: 10.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+*** Element info: {Using=id, value=emailId}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.postyourcv(JobSeekerHomeSearchPageTest.java:1831)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:jobGallery</h2>
+<div style="padding-left:3em">
+<p>Job Gallary Test case Failed  Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;hpms fl&apos;]//h3[2]&quot;}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+*** Element info: {Using=xpath, value=//div[@class=&apos;hpms fl&apos;]//h3[2]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.jobGallery(JobSeekerHomeSearchPageTest.java:2018)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:footFastfarward</h2>
+<div style="padding-left:3em">
+<p>FastFarward Links Sub Titles are Missing expected:&lt;Job Alerts - Job Alert on Mobile - Job Alert on Email - Naukri.com&gt; but was:&lt;Atos&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:171)
+<br/>at com.nk.tests.JobSeekerHomeSearchPageTest.footFastfarward(JobSeekerHomeSearchPageTest.java:1220)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:serviceForRecruiters</h2>
+<div style="padding-left:3em">
+<p>serviceForRecruiters Test case Failed Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/h3[text()=&apos;Services for Recruiters&apos;]&quot;}
+Command duration or timeout: 10.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+*** Element info: {Using=xpath, value=//div/h3[text()=&apos;Services for Recruiters&apos;]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.serviceForRecruiters(JobSeekerHomeSearchPageTest.java:2368)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:partnersite</h2>
+<div style="padding-left:3em">
+<p>partnersite Test case failed Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;footer carousel&apos;]/div/span&quot;}
+Command duration or timeout: 10.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+*** Element info: {Using=xpath, value=//div[@class=&apos;footer carousel&apos;]/div/span}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.partnersite(JobSeekerHomeSearchPageTest.java:1181)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:walkinjobs</h2>
+<div style="padding-left:3em">
+<p>walkinjobs Testcase Is failed Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.walkinjobs(JobSeekerHomeSearchPageTest.java:2086)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:jobBYCategory</h2>
+<div style="padding-left:3em">
+<p>jobBYCategory Test case Failed  Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/h5&quot;}
+Command duration or timeout: 10.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+*** Element info: {Using=xpath, value=//div/h5}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.jobBYCategory(JobSeekerHomeSearchPageTest.java:2503)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:naukriFastForward</h2>
+<div style="padding-left:3em">
+<p>naukriFastForward Test case is FailedUnable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/a/h3&quot;}
+Command duration or timeout: 10.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+*** Element info: {Using=xpath, value=//div/a/h3}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.naukriFastForward(JobSeekerHomeSearchPageTest.java:2167)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:topemployer</h2>
+<div style="padding-left:3em">
+<p>topemployer Test case Failed Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/h2[2]&quot;}
+Command duration or timeout: 10.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;Vijulin&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+*** Element info: {Using=xpath, value=//div/h2[2]}
+Session ID: 9b7950ad-d2dd-4909-aa68-9223542a2abb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]</p>
+com.nk.tests.JobSeekerHomeSearchPageTest.topemployer(JobSeekerHomeSearchPageTest.java:1263)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:JobsearchItemsdisplayed</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:fastFarward</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m20"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:footEmployee</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m21"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:bestPlaceToWork</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m22"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:jobBYLocation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m23"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:componetdisplayedfornotloggedin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m24"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:browsejobs</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m25"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:footBrowsejobs</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m26"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:careerNavigator</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m27"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:recuitersMenu</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m28"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:getscreenshot</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m29"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:headerListItemsAndRecruiters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m30"></a><h2>com.nk.tests.JobSeekerHomeSearchPageTest:createJobAlert</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

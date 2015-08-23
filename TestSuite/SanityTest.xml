@@ -1,0 +1,18 @@
+<suite name="Sanity">
+
+<test name="SanityTest">
+
+
+ <classes >
+ 
+ 	<class name="com.nk.tests.SimpleTitleTest">
+ 
+  		<methods>
+  			<include name="SimpleTest"/>
+  	
+  </methods>
+ </class>
+ 	
+ </classes>
+</test>
+</suite>

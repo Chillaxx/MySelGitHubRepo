@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.nk.tests.JobSeekerHomeSearchPageTest">
+        <methods>
+          <include name="jobsMenu"/>
+          <include name="walkinjobs"/>
+          <include name="partnersite"/>
+          <include name="hpHeaderrightside"/>
+          <include name="servicesResumeWriting"/>
+          <include name="jobGallery"/>
+          <include name="topemployer"/>
+          <include name="serviceForRecruiters"/>
+          <include name="jobBYCategory"/>
+          <include name="moreMenu"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="jobSpeak"/>
+          <include name="postyourcv"/>
+          <include name="footInformation"/>
+          <include name="naukriFastForward"/>
+        </methods>
+      </class> <!-- com.nk.tests.JobSeekerHomeSearchPageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

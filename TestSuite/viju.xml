@@ -1,0 +1,18 @@
+<suite name="viju">
+
+<test name="vijuTest">
+
+
+ <classes >
+ 
+ 	<class name="com.nk.tests.JobSeekerHomeSearchPageTest">
+ 
+  		<methods>
+  			<include name="JobSeekerHomeSearchPage"/>
+  	
+  </methods>
+ </class>
+ 	
+ </classes>
+</test>
+</suite>
